@@ -1,0 +1,45 @@
+{
+  "kind": "legacy-il-candidate-summary",
+  "schemaVersion": "research-1",
+  "operational": false,
+  "evidenceStatus": "legacy-il-observed",
+  "game": {
+    "sha256": "157f484be2ead4ab27006d1002c2c666a7228197b88b14c8d026e76f31b1d62d",
+    "fileVersion": "8.0.2",
+    "productVersion": "8.0.2f117931",
+    "filePrivatePart": 52395,
+    "legacyVariant": "8.0.2v1"
+  },
+  "source": {
+    "editorSha256": "e7ba25394eb1f69fc73814a4cbe198a45a5681670f7472a07d9ba9f2a0b3fb07",
+    "personsLoader": "loadOffsets_8_0_2v1",
+    "playersLoader": "loadplayersOffsets_8_0_2v2",
+    "personsAssignmentCount": 106,
+    "playersAssignmentCount": 123
+  },
+  "playerListHeaderCandidate": 28437836,
+  "observedReadPath": [
+    "ReadInt32(header)",
+    "ReadInt32(header + 4)",
+    "ReadInt32(tablePointer + 4 * index)",
+    "ReadInt32(playerPointer + 256)"
+  ],
+  "fields": {
+    "Persons": {
+      "OffsetPersonsList": 22642280,
+      "OffsetStaff": 22742756,
+      "OffsetPlayerStaff": 22977756,
+      "OffsetGamer": 22732836
+    },
+    "Players": {
+      "OffsetPlayerID": 256,
+      "OffsetPlayerPtr": 236,
+      "OffsetPlayerBanInjuryPtr": 48,
+      "OffsetAttributesAndPositions": 204,
+      "OffsetStaffPlayerAttributesAndPositions": -88,
+      "OffsetPlayer": 22721556,
+      "OffsetPlayerBan": 22976660,
+      "OffsetPlayerInjury": 22976600
+    }
+  }
+}
