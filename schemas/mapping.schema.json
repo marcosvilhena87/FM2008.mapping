@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/marcosvilhena87/FM2008.mapping/blob/main/schemas/mapping.schema.json",
+  "title": "FM2008 mapping manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "game",
+    "build",
+    "structures"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "game": {
+      "const": "FM2008"
+    },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "architecture",
+        "executableSha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "architecture": {
+          "enum": [
+            "x86"
+          ]
+        },
+        "executableSha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "structures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/structure"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "size",
+        "fields"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/field"
+          }
+        }
+      }
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "offset",
+        "type",
+        "writable"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "type": {
+          "enum": [
+            "u8",
+            "u16",
+            "u32",
+            "i8",
+            "i16",
+            "i32",
+            "f32",
+            "f64",
+            "bytes"
+          ]
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "writable": {
+          "type": "boolean"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
