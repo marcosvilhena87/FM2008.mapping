@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "game": "FM2008",
+  "build": {
+    "id": "EXEMPLO-NAO-OPERACIONAL",
+    "architecture": "x86",
+    "executableSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "notes": "Hash e campos fictícios. Proibido selecionar este mapa para leitura ou escrita real."
+  },
+  "structures": [
+    {
+      "name": "ExampleRecord",
+      "size": 16,
+      "fields": [
+        {
+          "name": "exampleId",
+          "offset": 0,
+          "type": "u32",
+          "writable": false
+        },
+        {
+          "name": "exampleValue",
+          "offset": 4,
+          "type": "i32",
+          "writable": false
+        }
+      ]
+    }
+  ]
+}
