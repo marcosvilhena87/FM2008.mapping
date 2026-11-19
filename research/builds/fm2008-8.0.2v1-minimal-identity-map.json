@@ -93,9 +93,23 @@
       ],
       "repeats": 2,
       "samplesIdentical": true,
-      "independentIdNameChecksForNewIndices": 0,
+      "independentIdNameChecksForNewIndices": 2,
       "reportedEvidence": "fm2008-8.0.2v1-first-save-distributed-sampling-2026-11-18.md",
-      "scope": "read-only probe; user-supplied console log; no external audit"
+      "scope": "read-only probe; user-supplied console log; no external audit",
+      "manualConfirmedIndices": [
+        0,
+        5022,
+        6696
+      ],
+      "pendingManualIndices": [
+        837,
+        1674,
+        2511,
+        3348,
+        4185,
+        5859
+      ],
+      "r04Evidence": "fm2008-8.0.2v1-first-save-r04-profile-checks.csv"
     }
   },
   "approvalBlockers": [
