@@ -16,7 +16,7 @@ REFERENCE_COLUMNS = (
     "save_id", "observed_index", "reference_id", "first_name",
     "last_name", "common_name", "source_type", "source_detail", "reviewer"
 )
-INDEPENDENT_ID_SOURCES = {"independent_database", "independent_tool"}
+INDEPENDENT_ID_SOURCES = {"independent_database", "independent_tool", "game_ui_id_visible"}
 ACCEPTED_SOURCES = INDEPENDENT_ID_SOURCES | {"game_ui"}
 DISALLOWED_ORIGINS = {"readonlyprobe", "fmrte2008", "same_probe", "probe_output"}
 
@@ -82,7 +82,7 @@ def verify(observed_rows, reference_rows):
                 if not ref_id.isdigit() or int(ref_id) <= 0:
                     status = "invalid_reference_id"
                 elif source not in INDEPENDENT_ID_SOURCES:
-                    # The game's UI usually shows names but not internal IDs.
+                    # A game UI source without explicit ID visibility proves names only.
                     status = "name_only"
                 elif int(ref_id) != int(o["id"]):
                     status = "mismatch"
@@ -109,7 +109,7 @@ def verify(observed_rows, reference_rows):
             bool(entries) and len(entries) == len(observed)
             and counts["id_and_name_match"] == len(observed)
         ),
-        "note": "Relatório documental: não aprova mapa nem verifica autenticidade externa da referência.",
+        "note": "Comparações documentais baseadas em fonte declarada pelo revisor; não há auditoria independente de capturas ou da origem. Não aprova mapa.",
         "entries": entries,
     }
 
