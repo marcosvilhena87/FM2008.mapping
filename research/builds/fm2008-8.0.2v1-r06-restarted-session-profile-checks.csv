@@ -2,3 +2,9 @@ save_id,session_pid,probe_index,observed_id,observed_full_name,manual_id_name_co
 save-01,17632,837,310748,André dos Santos Oliveira,true,user_reported_game_profile,Usuario declarou Validado no contexto da verificacao R06,false,Nome comum Rancharia apenas observado pelo probe
 save-01,17632,5022,19014205,Paulo Victor Mileo Vidotti,true,user_reported_game_profile,Usuario declarou Validado no contexto da verificacao R06,false,Nome comum Paulo Victor apenas observado pelo probe
 save-01,17632,6697,2000000006,John Schweitzer,true,user_reported_game_profile,Usuario declarou Validado no contexto da verificacao R06,false,Nome comum ausente no probe e nao conferido separadamente
+save-01,17632,0,20,Ivica Dragutinovic,true,user_reported_game_profile,Usuario declarou Validado apos reinicio da sessao R06,false,Nome comum ausente no probe e nao conferido separadamente
+save-01,17632,1674,537831,Tom De Mul,true,user_reported_game_profile,Usuario declarou Validado apos reinicio da sessao R06,false,Nome comum ausente no probe e nao conferido separadamente
+save-01,17632,2511,2106756,Jivago Osório de Oliveira,true,user_reported_game_profile,Usuario declarou Validado apos reinicio da sessao R06,false,Nome comum Jivago apenas observado pelo probe
+save-01,17632,3348,3700312,Daniel Jensen,true,user_reported_game_profile,Usuario declarou Validado apos reinicio da sessao R06,false,Nome comum ausente no probe e nao conferido separadamente
+save-01,17632,4185,8825866,Reinaldo Santos Fagundes,true,user_reported_game_profile,Usuario declarou Validado apos reinicio da sessao R06,false,Nome comum Renna apenas observado pelo probe
+save-01,17632,5859,19046034,Bernardo Oliveira Lage,true,user_reported_game_profile,Usuario declarou Validado apos reinicio da sessao R06,false,Nome comum Bernardo apenas observado pelo probe
