@@ -148,6 +148,53 @@
       "previousLastPlayerId": 1394641174,
       "previousLastPlayerName": "Luiz Fernando de Abreu",
       "userConfirmationEvidence": "fm2008-8.0.2v1-r05-week-advance-2026-11-18.md"
+    },
+    "normalRestartReadOnlyProbe": {
+      "save": "save-01",
+      "reportedDate": "2026-11-18",
+      "oldPid": 24860,
+      "newPid": 17632,
+      "oldProcessRejected": true,
+      "newStartTime": "2026-11-18 23:48:23",
+      "newBuildRecognized": "8.0.2v1",
+      "moduleBaseOld": "0x00400000",
+      "moduleBaseNew": "0x00400000",
+      "headerVaNew": "0x01B1ED4C",
+      "tablePointerOld": "0x1F932010",
+      "tablePointerNew": "0x18F82890",
+      "countOld": 6698,
+      "countNew": 6698,
+      "indices": [
+        0,
+        837,
+        1674,
+        2511,
+        3348,
+        4185,
+        5022,
+        5859,
+        6697
+      ],
+      "repeatsNew": 2,
+      "samplesIdenticalNew": true,
+      "sameIndexIdMatches": 1,
+      "changedIndexIdMatches": 8,
+      "newIds": [
+        20,
+        310748,
+        537831,
+        2106756,
+        3700312,
+        8825866,
+        19014205,
+        19046034,
+        2000000006
+      ],
+      "newRecordsIndependentlyCrossChecked": false,
+      "duringActiveReadFailureValidated": false,
+      "realModuleRelocationObserved": false,
+      "result": "Normal restart and explicit new read-only probe successful; mid-read recovery untested",
+      "evidence": "fm2008-8.0.2v1-r06-normal-restart-2026-11-18.md"
     }
   },
   "approvalBlockers": [
