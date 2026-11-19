@@ -1,0 +1,32 @@
+name: Validar confronto independente de jogadores (offline)
+on:
+  push:
+    paths:
+      - 'scripts/verify_player_identification.py'
+      - 'tests/test_verify_player_identification.py'
+      - 'research/builds/fm2008-8.0.2v1-*-identit*.csv'
+      - '.github/workflows/independent-identification-validation.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testar classificações de evidência
+        run: python -m unittest discover -s tests -p 'test_verify_player_identification.py' -v
+      - name: Confrontar referências ainda não revisadas
+        run: |
+          python scripts/verify_player_identification.py \
+            --observed research/builds/fm2008-8.0.2v1-observed-player-identities.csv \
+            --reference research/builds/fm2008-8.0.2v1-independent-reference-template.csv \
+            --output /tmp/player-id-cross-check.json
+          python - <<'PY'
+          import json
+          data = json.load(open("/tmp/player-id-cross-check.json", encoding="utf-8"))
+          assert data["independently_confirmed_ids"] == 0
+          assert data["approved"] is False and data["operational"] is False
+          print("Estado inicial corretamente pendente; nenhuma validação independente inventada")
+          PY
