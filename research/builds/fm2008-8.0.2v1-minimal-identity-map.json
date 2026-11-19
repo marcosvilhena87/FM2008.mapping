@@ -190,11 +190,27 @@
         19046034,
         2000000006
       ],
-      "newRecordsIndependentlyCrossChecked": false,
+      "newRecordsIndependentlyCrossChecked": true,
       "duringActiveReadFailureValidated": false,
       "realModuleRelocationObserved": false,
       "result": "Normal restart and explicit new read-only probe successful; mid-read recovery untested",
-      "evidence": "fm2008-8.0.2v1-r06-normal-restart-2026-11-18.md"
+      "evidence": "fm2008-8.0.2v1-r06-normal-restart-2026-11-18.md",
+      "manualIdNameConfirmedIndices": [
+        837,
+        5022,
+        6697
+      ],
+      "manualIdNameConfirmedCount": 3,
+      "pendingFreshSessionManualIndices": [
+        0,
+        1674,
+        2511,
+        3348,
+        4185,
+        5859
+      ],
+      "manualCheckBasis": "User-reported ID/name confirmation; individual common names not checked; no independent audit",
+      "manualCheckEvidence": "fm2008-8.0.2v1-r06-restarted-session-profile-checks.csv"
     }
   },
   "approvalBlockers": [
