@@ -1,0 +1,4 @@
+save_id,session_pid,probe_index,observed_id,observed_full_name,manual_id_name_confirmed,source_type,source_detail,common_name_separately_confirmed,notes
+save-01,17632,837,310748,André dos Santos Oliveira,true,user_reported_game_profile,Usuario declarou Validado no contexto da verificacao R06,false,Nome comum Rancharia apenas observado pelo probe
+save-01,17632,5022,19014205,Paulo Victor Mileo Vidotti,true,user_reported_game_profile,Usuario declarou Validado no contexto da verificacao R06,false,Nome comum Paulo Victor apenas observado pelo probe
+save-01,17632,6697,2000000006,John Schweitzer,true,user_reported_game_profile,Usuario declarou Validado no contexto da verificacao R06,false,Nome comum ausente no probe e nao conferido separadamente
