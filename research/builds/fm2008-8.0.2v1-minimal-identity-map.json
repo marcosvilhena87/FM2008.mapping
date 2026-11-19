@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "research-1",
+  "kind": "minimal-player-identity-map",
+  "variant": "8.0.2v1",
+  "operational": false,
+  "approved": false,
+  "readOnly": true,
+  "executable": {
+    "sha256": "157f484be2ead4ab27006d1002c2c666a7228197b88b14c8d026e76f31b1d62d",
+    "fileVersion": "8.0.2",
+    "filePrivatePart": 52395,
+    "architecture": "x86"
+  },
+  "header": {
+    "rva": "0x0171ED4C",
+    "layout": [
+      {
+        "name": "tablePointer",
+        "offset": 0,
+        "type": "u32"
+      },
+      {
+        "name": "count",
+        "offset": 4,
+        "type": "i32"
+      }
+    ]
+  },
+  "player": {
+    "tableEntrySize": 4,
+    "fields": [
+      {
+        "name": "id",
+        "offset": 256,
+        "type": "i32"
+      },
+      {
+        "name": "firstName",
+        "offset": 280,
+        "type": "legacy-name"
+      },
+      {
+        "name": "lastName",
+        "offset": 284,
+        "type": "legacy-name"
+      },
+      {
+        "name": "commonName",
+        "offset": 288,
+        "type": "legacy-name-optional"
+      }
+    ]
+  },
+  "name": {
+    "outerToInnerOffset": 36,
+    "innerToTextOffset": 8,
+    "encoding": "UTF-16LE",
+    "termination": "NUL",
+    "maxCodeUnits": 96
+  },
+  "evidence": [
+    "fm2008-8.0.2v1-player-identification-dynamic-evidence.md",
+    "fm2008-8.0.2v1-second-save-dynamic-evidence.md"
+  ],
+  "validation": {
+    "independentSaves": 2,
+    "repeatSamplesPerSave": 2,
+    "sampledPlayerEntriesPerSave": 5,
+    "independentInGameIdVerification": false,
+    "fullTableValidated": false,
+    "relocatedModuleValidated": false
+  },
+  "approvalBlockers": [
+    "Confrontar IDs com fonte independente do próprio jogo",
+    "Revisar limites, identidade e comportamento em casos adversos",
+    "Não extrapolar offsets não incluídos neste mapa"
+  ],
+  "notes": "Documento de pesquisa; não deve ser importado pelo catálogo operacional sem revisão e aprovação explícitas."
+}
