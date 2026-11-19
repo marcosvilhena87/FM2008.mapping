@@ -93,23 +93,23 @@
       ],
       "repeats": 2,
       "samplesIdentical": true,
-      "independentIdNameChecksForNewIndices": 2,
+      "independentIdNameChecksForNewIndices": 8,
       "reportedEvidence": "fm2008-8.0.2v1-first-save-distributed-sampling-2026-11-18.md",
       "scope": "read-only probe; user-supplied console log; no external audit",
       "manualConfirmedIndices": [
         0,
-        5022,
-        6696
-      ],
-      "pendingManualIndices": [
         837,
         1674,
         2511,
         3348,
         4185,
-        5859
+        5022,
+        5859,
+        6696
       ],
-      "r04Evidence": "fm2008-8.0.2v1-first-save-r04-profile-checks.csv"
+      "pendingManualIndices": [],
+      "r04Evidence": "fm2008-8.0.2v1-first-save-r04-profile-checks.csv",
+      "manualIdNameCheckScope": "Nine pairs reported confirmed by user; internal common-name fields not separately confirmed or externally audited"
     }
   },
   "approvalBlockers": [
