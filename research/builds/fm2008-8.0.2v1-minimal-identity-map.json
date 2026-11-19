@@ -66,14 +66,17 @@
     "independentSaves": 2,
     "repeatSamplesPerSave": 2,
     "sampledPlayerEntriesPerSave": 5,
-    "independentInGameIdVerification": false,
+    "independentInGameIdVerification": true,
     "fullTableValidated": false,
-    "relocatedModuleValidated": false
+    "relocatedModuleValidated": false,
+    "independentInGameIdVerificationBasis": "User-reported manual inspection of displayed names and IDs in FM2008 player profiles, 5 sampled records per save; not externally audited",
+    "manualInGameIdNameMatches": 10,
+    "independentSavesWithManualCrossCheck": 2
   },
   "approvalBlockers": [
-    "Confrontar IDs com fonte independente do próprio jogo",
-    "Revisar limites, identidade e comportamento em casos adversos",
-    "Não extrapolar offsets não incluídos neste mapa"
+    "Auditar a origem declarada dos IDs e a cobertura dos campos de nomes, incluindo nome comum",
+    "Revisar limites, identidade, relocação do módulo e falhas em cenários adversos",
+    "Obter aprovação formal explícita de escopo somente leitura; não extrapolar offsets"
   ],
   "notes": "Documento de pesquisa; não deve ser importado pelo catálogo operacional sem revisão e aprovação explícitas."
 }
