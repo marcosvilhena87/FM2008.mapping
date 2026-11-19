@@ -30,19 +30,19 @@ jobs:
           assert data["approved"] is False and data["operational"] is False
           print("Estado inicial corretamente pendente; nenhuma validação independente inventada")
           PY
-      - name: Confrontar cinco perfis declarados pelo usuário na segunda partida
+      - name: Confrontar dez pares declarados pelo usuário nas duas partidas
         run: |
           python scripts/verify_player_identification.py \
             --observed research/builds/fm2008-8.0.2v1-observed-player-identities.csv \
             --reference research/builds/fm2008-8.0.2v1-independent-reference-reviewed.csv \
-            --output /tmp/player-id-second-save-review.json
+            --output /tmp/player-id-two-saves-review.json
           python - <<'PY'
           import json
           data = json.load(open("/tmp/player-id-second-save-review.json", encoding="utf-8"))
           assert data["observed_count"] == 10
-          assert data["compared_count"] == 5
-          assert data["independently_confirmed_ids"] == 5
-          assert data["all_ids_independently_confirmed"] is False
+          assert data["compared_count"] == 10
+          assert data["independently_confirmed_ids"] == 10
+          assert data["all_ids_independently_confirmed"] is True
           assert data["approved"] is False and data["operational"] is False
-          print("Cinco IDs e nomes coincidem com referências declaradas pelo usuário; mapa não aprovado")
+          print("Dez pares ID/nome coincidem com referências declaradas pelo usuário; mapa não aprovado")
           PY
