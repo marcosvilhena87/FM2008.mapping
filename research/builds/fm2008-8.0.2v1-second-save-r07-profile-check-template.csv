@@ -1,10 +1,10 @@
 save_id,probe_index,observed_id,observed_full_name,manual_check_status,manual_reference_source,notes
-save-02,0,20,Ivica Dragutinovic,PENDING,,
-save-02,644,152976,Jack Obersteller,PENDING,,
-save-02,1288,950298,Carlos Tévez,PENDING,,
-save-02,1932,3200348,Joris Van Hout,PENDING,,
-save-02,2576,5107858,Simon Rayner,PENDING,,
-save-02,3220,5203664,Steven MacLean,PENDING,,
-save-02,3864,8832899,Celso Luiz Honorato Junior,PENDING,,
-save-02,4508,28018732,Tom Connolly,PENDING,,
-save-02,5153,1394641331,Daniel Holden,PENDING,,
+save-02,0,20,Ivica Dragutinovic,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,644,152976,Jack Obersteller,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,1288,950298,Carlos Tévez,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,1932,3200348,Joris Van Hout,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,2576,5107858,Simon Rayner,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,3220,5203664,Steven MacLean,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,3864,8832899,Celso Luiz Honorato Junior,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,4508,28018732,Tom Connolly,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
+save-02,5153,1394641331,Daniel Holden,USER_CONFIRMED,user-reported FM2008 profile check,ID and full name confirmed by user; common-name field not separately checked
