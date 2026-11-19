@@ -1,4 +1,9 @@
 save_id,observed_index,reference_id,first_name,last_name,common_name,source_type,source_detail,reviewer
+save-01,0,20,Ivica,Dragutinovic,,game_ui_id_visible,Relato do usuário: nome e ID conferidos diretamente no perfil do FM2008 na primeira partida sem divergências,usuario-relato
+save-01,1,21,Nivaldo,Lima Vieira,Nivaldo,game_ui_id_visible,Relato do usuário: nome e ID conferidos diretamente no perfil do FM2008 na primeira partida sem divergências; nome comum baseado no diagnóstico,usuario-relato
+save-01,2,45,Paolo,Maldini,,game_ui_id_visible,Relato do usuário: nome e ID conferidos diretamente no perfil do FM2008 na primeira partida sem divergências,usuario-relato
+save-01,3,54,Edgar,Davids,,game_ui_id_visible,Relato do usuário: nome e ID conferidos diretamente no perfil do FM2008 na primeira partida sem divergências,usuario-relato
+save-01,4,66,Massimo,Ambrosini,,game_ui_id_visible,Relato do usuário: nome e ID conferidos diretamente no perfil do FM2008 na primeira partida sem divergências,usuario-relato
 save-02,0,20,Ivica,Dragutinovic,,game_ui_id_visible,Relato do usuário: nome e ID vistos diretamente no perfil do FM2008 na segunda partida,usuario-relato
 save-02,1,45,Paolo,Maldini,,game_ui_id_visible,Relato do usuário: nome e ID vistos diretamente no perfil do FM2008 na segunda partida,usuario-relato
 save-02,2,54,Edgar,Davids,,game_ui_id_visible,Relato do usuário: nome e ID vistos diretamente no perfil do FM2008 na segunda partida,usuario-relato
