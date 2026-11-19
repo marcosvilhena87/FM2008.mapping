@@ -212,7 +212,7 @@
       "manualCheckEvidence": "fm2008-8.0.2v1-r06-restarted-session-profile-checks.csv"
     },
     "r07Consolidated": {
-      "status": "partial",
+      "status": "partial: two saves distributed, second save external ID/name checks pending",
       "source": "fm2008-8.0.2v1-r07-consolidation.md",
       "distinctSaves": [
         {
@@ -240,9 +240,45 @@
         "tablePointerChanged": true,
         "secondSessionManualIdNamePairs": 9
       },
-      "secondSaveDistributedNineSamplesValidated": false,
+      "secondSaveDistributedNineSamplesValidated": true,
       "fullTableValidated": false,
-      "conclusion": "Pointers and indices are session-specific; revalidate every new session"
+      "conclusion": "Pointers and indices are session-specific; revalidate every new session",
+      "secondSaveDistributedProfileChecksCompleted": false,
+      "secondSaveDistributed": {
+        "playerCount": 5154,
+        "moduleBase": "0x00400000",
+        "headerVa": "0x01B1ED4C",
+        "tablePointer": "0x180E4010",
+        "historicalTablePointer": "0x0E8F5E30",
+        "indices": [
+          0,
+          644,
+          1288,
+          1932,
+          2576,
+          3220,
+          3864,
+          4508,
+          5153
+        ],
+        "ids": [
+          20,
+          152976,
+          950298,
+          3200348,
+          5107858,
+          5203664,
+          8832899,
+          28018732,
+          1394641331
+        ],
+        "repeats": 2,
+        "samplesIdentical": true,
+        "manualChecksInThisSample": 0,
+        "profileCheckStatus": "pending",
+        "pid": "not supplied in transcript",
+        "reference": "fm2008-8.0.2v1-second-save-distributed-r07.md"
+      }
     },
     "residualRiskReview": {
       "reference": "fm2008-8.0.2v1-residual-risk-review-after-r07.md",
