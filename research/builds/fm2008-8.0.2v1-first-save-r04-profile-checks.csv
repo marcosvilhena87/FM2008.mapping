@@ -1,3 +1,9 @@
 save_id,probe_index,observed_id,observed_full_name,manual_id_name_confirmed,source_type,source_detail,common_name_separately_confirmed,notes
 save-01,5022,19014151,Marcos Vinicius Paineiros Santos Souza,true,user_reported_game_profile,Usuario informou Validado para nome e ID; método individual não detalhado,false,Nome comum Paineiras apenas observado no probe
 save-01,6696,1394641174,Luiz Fernando de Abreu,true,user_reported_game_profile,Usuario informou Validado para nome e ID; método individual não detalhado,false,Nome comum Fernando apenas observado no probe
+save-01,837,310743,Fábio Alves Félix,true,user_reported_game_profile,Usuario informou Validado para nome e ID; evidencia manual declarada,false,Nome comum Fabinho apenas observado no probe
+save-01,1674,533709,Sandro Yokota de Souza,true,user_reported_game_profile,Usuario informou Validado para nome e ID; evidencia manual declarada,false,Nome comum De Souza apenas observado no probe
+save-01,2511,2106577,Leandro Cassel,true,user_reported_game_profile,Usuario informou Validado para nome e ID; evidencia manual declarada,false,Nome comum Cassel apenas observado no probe
+save-01,3348,3700310,Romano Denneboom,true,user_reported_game_profile,Usuario informou Validado para nome e ID; evidencia manual declarada,false,Nome comum ausente no probe; campo nao conferido individualmente
+save-01,4185,8825845,Fabrício de Carvalho Silva,true,user_reported_game_profile,Usuario informou Validado para nome e ID; evidencia manual declarada,false,Nome comum Fabrício Carvalho apenas observado no probe
+save-01,5859,19046033,Danilo Vieira do Nascimento,true,user_reported_game_profile,Usuario informou Validado para nome e ID; evidencia manual declarada,false,Nome comum Danilo apenas observado no probe
