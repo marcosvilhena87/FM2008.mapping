@@ -71,7 +71,32 @@
     "relocatedModuleValidated": false,
     "independentInGameIdVerificationBasis": "User-reported manual inspection of displayed names and IDs in FM2008 player profiles, 5 sampled records per save; not externally audited",
     "manualInGameIdNameMatches": 10,
-    "independentSavesWithManualCrossCheck": 2
+    "independentSavesWithManualCrossCheck": 2,
+    "distributedReadOnlyProbe": {
+      "save": "save-01",
+      "reportedDate": "2026-11-18",
+      "pid": 24860,
+      "moduleBase": "0x00400000",
+      "headerVa": "0x01B1ED4C",
+      "tablePointer": "0x1F932010",
+      "playerCount": 6697,
+      "indices": [
+        0,
+        837,
+        1674,
+        2511,
+        3348,
+        4185,
+        5022,
+        5859,
+        6696
+      ],
+      "repeats": 2,
+      "samplesIdentical": true,
+      "independentIdNameChecksForNewIndices": 0,
+      "reportedEvidence": "fm2008-8.0.2v1-first-save-distributed-sampling-2026-11-18.md",
+      "scope": "read-only probe; user-supplied console log; no external audit"
+    }
   },
   "approvalBlockers": [
     "Auditar a origem declarada dos IDs e a cobertura dos campos de nomes, incluindo nome comum",
