@@ -38,7 +38,7 @@ jobs:
             --output /tmp/player-id-two-saves-review.json
           python - <<'PY'
           import json
-          data = json.load(open("/tmp/player-id-second-save-review.json", encoding="utf-8"))
+          data = json.load(open("/tmp/player-id-two-saves-review.json", encoding="utf-8"))
           assert data["observed_count"] == 10
           assert data["compared_count"] == 10
           assert data["independently_confirmed_ids"] == 10
