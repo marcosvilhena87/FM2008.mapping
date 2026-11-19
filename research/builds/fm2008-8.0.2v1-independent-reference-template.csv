@@ -1,0 +1,11 @@
+save_id,observed_index,reference_id,first_name,last_name,common_name,source_type,source_detail,reviewer
+save-01,0,,Ivica,Dragutinovic,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-01,1,,Nivaldo,Lima Vieira,Nivaldo,game_ui,Confirmar no perfil do jogador (nome somente),
+save-01,2,,Paolo,Maldini,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-01,3,,Edgar,Davids,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-01,4,,Massimo,Ambrosini,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-02,0,,Ivica,Dragutinovic,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-02,1,,Paolo,Maldini,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-02,2,,Edgar,Davids,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-02,3,,Massimo,Ambrosini,,game_ui,Confirmar no perfil do jogador (nome somente),
+save-02,4,,Alexander,Östlund,,game_ui,Confirmar no perfil do jogador (nome somente),
