@@ -58,6 +58,20 @@ class VerificationTests(unittest.TestCase):
         self.assertFalse(result["approved"])
         self.assertFalse(result["operational"])
 
+    def test_id_explicitly_visible_in_game_ui(self):
+        self.reference[0]["source_type"] = "game_ui_id_visible"
+        self.reference[0]["reference_id"] = "107"
+        self.reference[0]["source_detail"] = "ID 107 e nome vistos diretamente no perfil do FM2008"
+        result = module.verify(self.observed, self.reference)
+        self.assertEqual("id_and_name_match", result["entries"][0]["status"])
+        self.assertEqual(1, result["independently_confirmed_ids"])
+        self.assertFalse(result["approved"])
+
+    def test_game_ui_id_disagreement(self):
+        self.reference[0]["source_type"] = "game_ui_id_visible"
+        self.reference[0]["reference_id"] = "999"
+        self.assertEqual("mismatch", self.status())
+
     def test_independent_id_mismatch(self):
         self.reference[0]["reference_id"] = "999"
         self.reference[0]["source_type"] = "independent_tool"
