@@ -210,6 +210,44 @@
       "pendingFreshSessionManualIndices": [],
       "manualCheckBasis": "Nine ID and full-name pairs from restarted session confirmed by user report; no separate validation of common names or external audit",
       "manualCheckEvidence": "fm2008-8.0.2v1-r06-restarted-session-profile-checks.csv"
+    },
+    "r07Consolidated": {
+      "status": "partial",
+      "source": "fm2008-8.0.2v1-r07-consolidation.md",
+      "distinctSaves": [
+        {
+          "id": "save-01",
+          "count": 6697,
+          "initialRowsObserved": 5
+        },
+        {
+          "id": "save-02",
+          "count": 5154,
+          "initialRowsObserved": 5
+        }
+      ],
+      "sameSaveTemporalCountChange": {
+        "from": 6697,
+        "to": 6698,
+        "distributedSampleCount": 9,
+        "sharedIndexMatches": 8
+      },
+      "normalRestartSameCount": {
+        "from": 6698,
+        "to": 6698,
+        "changedIndexIdPairs": 8,
+        "sampled": 9,
+        "tablePointerChanged": true,
+        "secondSessionManualIdNamePairs": 9
+      },
+      "secondSaveDistributedNineSamplesValidated": false,
+      "fullTableValidated": false,
+      "conclusion": "Pointers and indices are session-specific; revalidate every new session"
+    },
+    "residualRiskReview": {
+      "reference": "fm2008-8.0.2v1-residual-risk-review-after-r07.md",
+      "formalRiskAcceptance": false,
+      "operationalGatePassed": false
     }
   },
   "approvalBlockers": [
