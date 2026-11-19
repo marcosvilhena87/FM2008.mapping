@@ -1,0 +1,3 @@
+save_id,probe_index,observed_id,observed_full_name,manual_id_name_confirmed,source_type,source_detail,common_name_separately_confirmed,notes
+save-01,5022,19014151,Marcos Vinicius Paineiros Santos Souza,true,user_reported_game_profile,Usuario informou Validado para nome e ID; método individual não detalhado,false,Nome comum Paineiras apenas observado no probe
+save-01,6696,1394641174,Luiz Fernando de Abreu,true,user_reported_game_profile,Usuario informou Validado para nome e ID; método individual não detalhado,false,Nome comum Fernando apenas observado no probe
